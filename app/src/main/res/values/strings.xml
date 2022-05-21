@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AgriTech</string>
+    <string name="logo">Logo application</string>
+    <string name="pourcentage">Pourcentage</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dropDown">Selectionner votre parcelle</string>
+    <string name="temperature">Temperature</string>
+    <string name="hum_sol">Humidité du sol</string>
+</resources>

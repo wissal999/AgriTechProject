@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="Profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"/>
+       />
+    <Preference
+        android:key="ListReclamations"
+        android:title="Mes reclamations"
+        android:icon="@drawable/ic_baseline_list_24"
+        />
+    <Preference
+        android:key="Deconnexion"
+        android:title="Deconnexion"
+        android:icon="@drawable/baseline_logout_24"
+        />
+    />
+    <PreferenceCategory
+        android:title="Réglage général"
+        android:textSize="25dp"
+        android:layout="@layout/preference_view"
+
+        >
+
+        <Preference
+            android:key="text"
+            android:title="A propos de nous"
+            android:icon="@drawable/ic_baseline_info_24"
+           />
+        <Preference
+            android:key="contactUs"
+            android:title="Contactez nous"
+            android:icon="@drawable/ic_baseline_call_24"
+        />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
+

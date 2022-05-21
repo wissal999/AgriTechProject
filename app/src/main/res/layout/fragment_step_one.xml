@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".GestionParcelle.UpdateParcelle.StepOneFragment">
+
+<com.google.android.material.textfield.TextInputLayout
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt_layout_nom_parcelle"
+    android:layout_marginTop="20dp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:hint="Nom parcelle"
+    >
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/edt_name_parcel_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+
+<com.google.android.material.textfield.TextInputLayout
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/dropdown_menu_cultures_update"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginTop="20dp"
+    app:layout_constraintTop_toBottomOf="@+id/txt_layout_nom_parcelle"
+    android:hint="Selectionner une culture"
+    >
+    <AutoCompleteTextView
+        android:id="@+id/auto_comp_liste_culture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt_layout_surface_parcel"
+    android:layout_marginTop="20dp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/dropdown_menu_cultures_update"
+    android:hint="Surface"
+    >
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/edt_surface_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt_layout_tot_imp_parcel"
+    android:layout_marginTop="20dp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txt_layout_surface_parcel"
+    android:hint="Total implantation"
+    >
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/edt_total_imp_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
